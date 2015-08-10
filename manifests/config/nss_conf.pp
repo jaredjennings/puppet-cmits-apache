@@ -17,7 +17,7 @@ class apache::config::nss_conf($nss_database_dir) {
     include apache
 
     if $::osfamily != 'RedHat' or $operatingsystemrelease !~ /^6\./ {
-        unimplemented()
+        fail "unimplemented on ${::osfamily} ${::operatingsystemrelease}"
     }
 
     $nss_sites_dir = '/etc/httpd/nss-site.d'

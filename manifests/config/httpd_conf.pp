@@ -24,7 +24,7 @@
 
 class apache::config::httpd_conf($max_request_body=4194304) {
     if $::osfamily != 'RedHat' or $operatingsystemrelease !~ /^6\./ {
-        unimplemented()
+        fail "unimplemented on ${::osfamily} ${::operatingsystemrelease}"
     }
 
     include apache
