@@ -1,12 +1,16 @@
 {
-  "name": "jaredjennings/apache",
-  "version": "0.1.0",
-  "author": "Jared Jennings",
-  "summary": "Provide the functionality of the apache module from CMITS (boilerplate)",
-  "license": "Apache-2.0",
-  "source": "https://github.com/jaredjennings/puppet-cmits-apache",
-  "project_page": "https://github.com/jaredjennings/puppet-cmits-apache",
-  "issues_url": "https://github.com/jaredjennings/puppet-cmits-apache/issues",
-  "dependencies": []
+  "name": "jaredjennings/apache", 
+  "version": "0.1.0", 
+  "author": "Jared Jennings", 
+  "summary": "Provide the functionality of the apache module from CMITS (boilerplate)", 
+  "license": "Apache-2.0", 
+  "source": "https://github.com/jaredjennings/puppet-cmits-apache", 
+  "project_page": "https://github.com/jaredjennings/puppet-cmits-apache", 
+  "issues_url": "https://github.com/jaredjennings/puppet-cmits-apache/issues", 
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib", 
+      "version_requirement": ">=2.2.0"
+    }
+  ]
 }
-
