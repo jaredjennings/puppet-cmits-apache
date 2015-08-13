@@ -19,7 +19,7 @@ class apache::stig::common {
 # \implements{apachestig}{WA00530 A22}%
 # Secure the web server PID file.
     file { "/var/run/httpd/httpd.pid":
-        mode => 0644,
+        mode => '0644',
     }
 
 # \implements{apachestig}{WG300 A22}%
@@ -34,7 +34,7 @@ class apache::stig::common {
 
     file {
         "/etc/httpd":
-            owner => root, group => 0, mode => 0600;
+            owner => root, group => 0, mode => '0600';
     }
 
 # \verb!bin! permissions are taken care of by the packaging system, and

@@ -107,7 +107,7 @@ class apache::config($max_request_body=4194304, $nss_database_dir) {
     }
     file { '/etc/httpd/common':
         ensure => directory,
-        owner => root, group => 0, mode => 0600,
+        owner => root, group => 0, mode => '0600',
         source => 'puppet:///modules/apache/common',
         recurse => true,
         recurselimit => 1,

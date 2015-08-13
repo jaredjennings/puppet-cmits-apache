@@ -61,7 +61,7 @@ class apache::config::nss_conf($nss_database_dir) {
     }
     file { $nss_sites_dir:
         ensure => directory,
-        owner => root, group => 0, mode => 0600,
+        owner => root, group => 0, mode => '0600',
     } ->
     toplevel_directive {
         'Include': arguments => ["${rel_nss_sites_dir}/*.conf"];

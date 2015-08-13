@@ -17,7 +17,7 @@ define apache::config::nss_site($content) {
     include apache
     $nss_sites_dir = $apache::config::nss_conf::nss_sites_dir
     file { "${nss_sites_dir}/${name}.conf":
-        owner => root, group => 0, mode => 0600,
+        owner => root, group => 0, mode => '0600',
         content => $content,
         require => [
             Class['apache::config'],
